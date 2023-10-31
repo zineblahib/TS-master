@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de Lecture de Livres</title>
+</head>
+<body>
+    <h1>Suivi de Lecture de Livres</h1>
+    <a href="/">ajouter</a>
+
+    <div id="bookList">
+        <% for (let i = 0; i < data.length; i++) { %>
+        <div>
+
+        <p><strong> titre </strong><%=data[i].title %></p>
+        <p><strong>Auteur :</strong> <%=data[i].author%></p>
+        <p><strong>Pourcentage de Lecture :</strong> <%=data[i].pagesRead/data[i].pages%></p>
+        <hr>
+    </div>
+    <% } %>
+
+    </div>
+
+   
+
+</body>
+</html>
